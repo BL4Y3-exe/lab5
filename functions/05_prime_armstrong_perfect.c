@@ -9,12 +9,11 @@
  */
 int is_prime(int x){
     for (int i = 2; i < x; i++){
-        if (x % i == 0) {
+        if (x % i == 0){
             return 0;
-        } else {
-            return 1;
         }
     }
+    return 1;
 }
 
 
@@ -23,16 +22,16 @@ int is_prime(int x){
  * get_num_of_digits, powers, sum_digits_power - helper functions for
  * is_armstrong function.
  */
-int get_num_of_digits(int n) {
+int get_num_of_digits(int n){
         int cnt = 0;
-        while (n != 0) {
+        while (n != 0){
                 cnt++;
                 n = n / 10; // n /= 10;
         }
         return cnt;
 }
 
-int powers(int n, int pow) {
+int powers(int n, int pow){
         int power = 1;
         for(int i = 1; i <= pow; i++) {
                 power = power * n;
@@ -40,9 +39,9 @@ int powers(int n, int pow) {
         return power;
 }
 
-int sum_digits_power(int num, int num_of_digits) {
+int sum_digits_power(int num, int num_of_digits){
         int sum = 0;
-        while (num != 0) {
+        while (num != 0){
                 int rem = num % 10;
                 int p = powers(rem, num_of_digits);
                 sum += p;
