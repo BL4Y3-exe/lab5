@@ -9,10 +9,10 @@
  * Return(int): biggest number.
  */
 int max(int a, int b){
-    if (a > b){
+    if (a > b) {
         return a;
     } 
-    else{
+    else {
         return b;
     }
 }
@@ -26,10 +26,10 @@ int max(int a, int b){
  * Return(int): smallest number.
  */
 int min(int a, int b){
-    if (a < b){
+    if (a < b) {
         return a;
     }
-    else{
+    else {
         return b;
     }
 }
