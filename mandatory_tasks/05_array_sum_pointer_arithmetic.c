@@ -13,6 +13,10 @@ int sum_array(int *arr, int length){
     return sum;
 }
 
+// Question: Can we determine array size inside the function without length?
+// Answer: No, when array name is passed to a function, it passed like pointer.
+// `sizeof(arr)` inside the function would evaluates to the size of pointer variable.
+
 
 int main(void) {
     int numbers[] = {10, 20, 30, 40, 50};

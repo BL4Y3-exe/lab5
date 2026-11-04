@@ -1,0 +1,8 @@
+Question: Justify why the & operator is necessary for scanf() when reading into
+an integer variable.
+
+Answer: C passes arguments by value (copying inputs into function parameter).
+if scanf() recieves directly <x>, it would only modify its local copy of x.
+To make scanf() write directly into your local variable's memory location,
+you must pass its memory address with <&>.
+
